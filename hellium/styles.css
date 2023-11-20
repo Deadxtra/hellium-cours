@@ -1,0 +1,131 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+p {
+  font-size: 0.8rem;
+}
+body {
+  min-height: 100vh;
+  background: rgb(29, 29, 29);
+  color: rgb(250, 250, 250);
+}
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: 30px auto;
+}
+h1 {
+  font-size: 5rem;
+}
+.header-left-container h3 {
+  color: #474dff;
+  font-style: 1.8rem;
+}
+.header-right {
+  width: 50%;
+}
+#modem {
+  margin: 0 auto;
+  width: 100%;
+}
+.infos {
+  display: grid;
+  grid-template-columns: 33% 66%;
+  background: rgb(10, 10, 10);
+  border-radius: 10px;
+}
+.btn-container {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+}
+button {
+  border: none;
+  background: #474dff;
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+.info-right {
+  width: 67%;
+}
+.investors {
+  display: grid;
+  align-items: center;
+  height: 86%;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.img-container img {
+  height: 60px;
+}
+/* **************** MEDIA QUERIES ***************** */
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-left-container {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  nav ul {
+    font-size: 0.7rem;
+  }
+  .header {
+    display: block;
+  }
+  .infos {
+    display: block;
+  }
+  .img-container img {
+    height: 50px;
+    display: grid;
+  }
+}
+.btn-container {
+  display: bloxk;
+  justify-content: center;
+  align-items: center;
+}
+.info-left {
+  display: grid;
+  width: auto;
+}
+.infos h3 {
+  display: flex;
+  justify-content: center;
+}
+.investors {
+  display: grid;
+  width: 100%;
+}
