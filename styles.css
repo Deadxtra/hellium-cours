@@ -3,10 +3,16 @@
   margin: 0;
   padding: 5px;
   box-sizing: border-box;
+  user-select: none;
 }
 
 li {
   list-style: none;
+  z-index: 3;
+}
+li:hover {
+  color: blue;
+  font-size: 1rem;
 }
 p {
   font-size: 0.8rem;
@@ -15,6 +21,40 @@ body {
   min-height: 100vh;
   background: rgb(29, 29, 29);
   color: rgb(250, 250, 250);
+}
+.mousemove {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  border: 2px solid #2128bd;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background: #2128bd;
+  transition: 0s;
+}
+.mousemove2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #ffffff;
+  transition: 0.1s;
+  mix-blend-mode: difference;
+}
+.gros {
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  border: 2px solid rgba(0, 0, 0, 0.419);
+  border-radius: 1000 0px;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  transition: 0.15s;
+  background: rgba(0, 0, 0, 0.419);
 }
 nav {
   display: grid;
